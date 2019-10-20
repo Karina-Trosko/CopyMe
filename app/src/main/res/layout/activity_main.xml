@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+
+            <LinearLayout
+                android:id="@+id/book_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/arthur"
+                android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_gravity="center"
+                android:background="@color/colorWhite"
+                android:paddingBottom="30dp"
+                android:src="@drawable/arthur" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                android:background="@drawable/gradient">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="55dp"
+                    android:gravity="center"
+                    android:paddingTop="40dp"
+                    android:text="The Adventures of Sherlock Holmes"
+                    android:textColor="#0C0000"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:text="The Adventures of Sherlock Holmes"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Arthur Conan Doyle"
+                    android:textColor="#0C0000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="13dp"
+                    android:background="#31D159"
+                    android:text="Read"
+                    android:textAllCaps="false"
+                    android:textColor="#FAFFFFFF"
+                    tools:visibility="visible">
+
+                </Button>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="fill|fill_horizontal"
+                    android:text="The adventures of Sherlock Holmes is a collection of twelw stories by Sir Arthur Conan Doyle, featuring his famous detective and illustrated by Sidne..."
+                    android:textColor="#CD120101"
+                    android:textSize="16sp">
+
+
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="More similar books"
+            android:textColor="#0C0000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="300dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:src="@drawable/robert" />
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="300dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:src="@drawable/thehyborian" />
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="300dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:src="@drawable/thescarlet" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+
+</ScrollView></androidx.constraintlayout.widget.ConstraintLayout>
